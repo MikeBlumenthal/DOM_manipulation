@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Sortr</title>
+  <link rel="styleheet" type="text/css" href="css/main.css"/>
+  <script src="js/app.js"></script>
+</head>
+<body>
+
+  <h2>What needs done?</h2>
+
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="task" class="primary">What needs done?</label>
+        <input type="text" id="task" required/>
+      </div>
+
+      <div class="form-item">
+          <label for="priority" class="primary">How urgent is it?</label>
+          <select id="priority" required>
+            <option value="" disabled selected></option>
+            <option value="noturgent">Not very urgent</option>
+            <option value="quite">Quite urgent</option>
+            <option value="very">Very urgent indeed</option>
+          </select>
+        </div>
+
+      <div class="form-item">
+        <label for="type" class="primary">Who for?</label><br>
+          <input type="radio" id='type' name="type" value="work" >Work<br>
+          <input type="radio" id="type" name="type" value="home" >Home<br>
+          <input type="radio" id="type" name="type" value="other" checked>Other<br>
+      </div>
+    </div>
+    <div class="button">
+      <input type="submit" value="save"/>
+    </div>
+  </form>
+
+
+<div>
+  <h3>Get This Stuff Done!</h3>
+
+<form>
+  <div class="button">
+    <input id="delete-all" type="submit" value="Remove all"/>
+  </div>
+</form>
+
+  <ul>
+    <div id="todolist">
+    </div>
+  </ul>
+
+</div>
+
+
+
+</body>
+</html>

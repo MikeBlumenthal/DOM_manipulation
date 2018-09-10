@@ -1,0 +1,23 @@
+body {
+  font-family: Courier;
+  color: #2D2D2A;
+  background-color: #FEDC97;
+}
+
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.urgent1 {
+  color: green;
+}
+
+.urgent2 {
+  color: yellow;
+}
+
+.urgent3 {
+  color: red;
+}
